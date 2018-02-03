@@ -1,0 +1,27 @@
+{
+  "name": "iamnormal",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Project for Hack Mental Health",
+  "main": "index.js",
+  "scripts": {
+    "serve": "parcel -p 4321 -o dev.html",
+    "release": "tsc --noEmit && parcel build index.tsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangfowen/hackmentalhealth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangfowen/hackmentalhealth/issues"
+  },
+  "homepage": "https://github.com/wangfowen/hackmentalhealth#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.5.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "typescript": "^2.7.1"
+  }
+}
