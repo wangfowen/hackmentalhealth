@@ -24,6 +24,7 @@
     "parcel-bundler": "^1.2.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-mdc-web": "^0.17.0",
     "typescript": "^2.7.1"
   }
 }

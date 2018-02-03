@@ -1,11 +1,20 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 
+import {Card, CardHeader, CardTitle} from 'react-mdc-web/lib';
+
+
 class App extends React.Component<{}, {}> {
   render() {
-    return <div>
-      Hello World!
-    </div>
+    return (
+       <Card style={{width: '100%'}}>
+          <CardHeader>
+            <CardTitle>
+              Hello world!
+            </CardTitle>
+          </CardHeader>
+        </Card>
+    )
   }
 }
 
