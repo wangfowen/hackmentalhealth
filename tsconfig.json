@@ -4,6 +4,7 @@
     "strict": true,
     "jsx": "react",
     "noUnusedLocals": true,
-    "target": "es5"
+    "target": "es5",
+    "outDir": "dist"
   }
 }
