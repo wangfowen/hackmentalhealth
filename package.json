@@ -5,14 +5,10 @@
   "description": "Project for Hack Mental Health",
   "main": "index.js",
   "scripts": {
-    "start": "npm run serve",
-    "serve": "node dist/src/server.js",
-    "postinstall": "npm run build",
-    "build": "npm run build-ts",
-    "build-ts": "tsc",
-    "watch-ts": "tsc -w",
-    "serve-frontend": "parcel -p 4321 -o dev.html",
-    "release": "tsc --noEmit && parcel build index.tsx"
+    "dev": "npm-run-all --parallel serve watch-ts watch-frontend",
+    "serve": "nodemon --watch src dist/src/server.js",
+    "watch-ts": "tsc -w src",
+    "watch-frontend": "parcel watch dev.html"
   },
   "repository": {
     "type": "git",
@@ -33,6 +29,8 @@
     "express": "^4.16.2",
     "express-graphql": "^0.6.11",
     "graphql": "^0.11.0",
+    "nodemon": "^1.17.1",
+    "npm-run-all": "^4.1.2",
     "parcel-bundler": "^1.2.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

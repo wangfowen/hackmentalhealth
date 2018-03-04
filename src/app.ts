@@ -33,10 +33,10 @@ app.get('/api/users/search', (req, res) => {
     res.send("TODO");
 });
 
-app.use('/static', express.static('static'));
+app.use('/dist', express.static('dist'));
 
 app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname, "../../dev.html"));
+    res.sendFile(path.join(__dirname, "../../dist/dev.html"));
 });
 
 export = app;
